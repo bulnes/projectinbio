@@ -12,6 +12,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
+      {...props}
       className={cn(
         "p3 text-white rounded-xl font-bold whitespace-nowrap hover:opacity-95 disabled:opacity-70",
         {
@@ -21,7 +22,6 @@ export function Button({
         },
         props.className
       )}
-      {...props}
     >
       {children}
     </button>
